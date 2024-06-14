@@ -120,6 +120,17 @@ footer {
   border-top-right-radius: 20px;
 }
 
+.title {
+  font-size: 24px;
+  letter-spacing: 1.2px;
+  margin-bottom: 15px;
+  font-weight: 500;
+  border-bottom: 3px solid var(--item);
+  padding-bottom: 5px;
+  width: 250px;
+  font-family: var(--font-title);
+}
+
 // .fixed {
 //   position: fixed;
 //   top: 0;
