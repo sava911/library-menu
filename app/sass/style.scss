@@ -37,6 +37,34 @@
   // margin-bottom: 20px;
 }
 
+.logo {
+
+  &__text {
+    font-size: 9px;
+    line-height: 9px;
+    padding-left: 2px;
+    text-transform: uppercase;
+
+  }
+
+  &__name {
+    position: relative;
+  }
+
+  &__name::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 9px;
+    right: -20px;
+
+    background-image: url("../images/check2.svg");
+    background-size: cover;
+
+  }
+}
+
 .banner {
   position: relative;
   margin-bottom: 20px;
@@ -87,6 +115,10 @@
   padding: 20px 10px;
   text-align: center;
   border-radius: 20px;
+  box-shadow:
+    0 13px 27px -5px rgba(50, 50, 93, 0.25),
+    0 8px 16px -8px rgba(0, 0, 0, 0.3),
+    0 -6px 16px -6px rgba(0, 0, 0, 0.025);
 
   b {
     font-size: 24px;
