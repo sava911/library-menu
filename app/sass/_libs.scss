@@ -1,0 +1,54 @@
+// input 
+.fancy {
+  position: relative;
+  width: 370px;
+  height: 70px;
+  max-width: 100%;
+  background: var(--item);
+  border-radius: 50px;
+  overflow: hidden;
+  --offset: 3px;
+  margin-bottom: 20px;
+}
+
+.fancy::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  background: conic-gradient(transparent 180deg, var(--dark), var(--dark));
+  transform: translate(-50%, -50%);
+  aspect-ratio: 1;
+  animation: rotate 2s linear infinite;
+}
+
+.fancy::after {
+  content: "";
+  position: absolute;
+  width: calc(100% - 2 * var(--offset));
+  height: calc(100% - 2 * var(--offset));
+  inset: var(--offset);
+  background: inherit;
+  border-radius: inherit;
+}
+
+.fancy input {
+  position: absolute;
+  // color: #006d77;
+  background: transparent;
+  font-size: 1rem;
+  inset: 0;
+  padding: 1.5rem;
+  z-index: 10;
+}
+
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) scale(1.4) rotate(0turn);
+  }
+
+  to {
+    transform: translate(-50%, -50%) scale(1.4) rotate(1turn);
+  }
+}

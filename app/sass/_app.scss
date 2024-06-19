@@ -1,0 +1,22 @@
+.banner-logo__inner {
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+
+  img {
+    border-radius: 20px;
+    background: var(--item);
+    margin-bottom: 20px;
+  }
+}
+
+.banner-logo__title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.banner-logo__text {
+  text-align: center;
+  letter-spacing: 1.2px;
+}

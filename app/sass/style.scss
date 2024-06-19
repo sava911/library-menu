@@ -1,6 +1,8 @@
 @import "_normalize.scss";
 @import "_vars.scss";
+@import "libs";
 @import "_global.scss";
+@import "_app.scss";
 
 // @import "_fonsts.scss";
 // @import "_header.scss";
@@ -326,6 +328,11 @@
   }
 }
 
+.page__icons {
+  display: flex;
+  gap: 5px;
+}
+
 .page__icons-btn {
   border-radius: 10px;
   border: 1px solid var(--dark);
@@ -340,6 +347,34 @@
 .page__text {
   letter-spacing: 1.2px;
   font-family: var(--font-title);
+  margin-bottom: 20px;
+}
+
+.tabel-info {
+
+  padding: 10px 0;
+  background: var(--item);
+  margin-bottom: 20px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    // gap: 5px;
+  }
+
+  &__item {
+    b {
+      font-size: 18px;
+      line-height: 18px;
+    }
+
+    span {
+      display: block;
+      opacity: 0.6;
+      line-height: 16px;
+      text-transform: lowercase;
+    }
+  }
 }
 
 .footer {
