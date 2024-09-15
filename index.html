@@ -11,7 +11,7 @@
 
 <body>
 
-  <header>
+  <header class="header">
     <div class="container">
       <div class="header__inner">
         <div class="logo__inner">
@@ -28,21 +28,41 @@
           </a>
 
         </div>
-        <div class="banner">
-          <div class="banner__items">
-            <img class="banner__img" src="images/s4.jpg" alt="img">
-          </div>
-          <div class="banner__dots-inner">
-            <div class="dots__items">
-              0000
-            </div>
-          </div>
-        </div>
+
       </div>
     </div>
   </header>
 
   <main>
+    <section class="banner">
+      <div class="container">
+        <!-- <div class="banner__items">
+          <img class="banner__img" src="images/s4.jpg" alt="img">
+        </div>
+        <div class="banner__dots-inner">
+          <div class="dots__items">
+            0000
+          </div>
+        </div> -->
+        <div data-slide="slide" class="slide">
+          <div class="slide-items">
+
+            <img src="images/s4.jpg" alt="Img 1">
+            <img src="images/hot.jpg" alt="Img 2">
+            <img src="images/bn4.webp" alt="Img 3">
+            <img src="images/raw.jpg" alt="Img 3">
+          </div>
+
+          <nav class="slide-nav">
+            <div class="slide-thumb"></div>
+            <button class="slide-prev">Previous</button>
+            <button class="slide-next">Next</button>
+          </nav>
+
+        </div>
+
+      </div>
+    </section>
     <div class="container">
       <div class="menu-items">
         <a href="!#" class="menu-item">
@@ -88,6 +108,8 @@
       </div>
     </div>
   </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
   <script src="js/main.min.js"></script>
 </body>
 

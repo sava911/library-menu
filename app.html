@@ -9,27 +9,85 @@
   <title>library-menu</title>
 </head>
 
-<body class="body-app">
+<body>
 
   <header></header>
   <main>
-    <div class="container">
-      <div class="banner-logo">
-        <div class="banner-logo__inner">
-          <img src="images/sticker.webp" width="150px" alt="banner logo">
+    <section class="body-app">
+      <div class="container">
+        <div class="banner-logo">
+          <div class="banner-logo__inner">
+            <img src="images/sticker.webp" width="150px" alt="banner logo">
+          </div>
+          <h1 class="banner-logo__title">Библиотека меню</h1>
+
         </div>
-        <h1 class="banner-logo__title">Библиотека меню</h1>
+        <div class="fancy">
+          <input id="searchText" onkeyup="myFunction()" type="text" placeholder="Введите название ресторана или кафе">
+        </div>
+        <p class="banner-logo__text">
+          Библиотека Меню — это удобное приложение и сайт, где каждый может ознакомиться с меню различных
+          ресторанов, кафе и баров.
+        </p>
 
       </div>
-      <div class="fancy">
-        <input type="text" placeholder="Введите название ресторана или кафе">
-      </div>
-      <p class="banner-logo__text">
-        Библиотека Меню — это удобное приложение и сайт, где каждый может ознакомиться с меню различных
-        ресторанов, кафе и баров.
-      </p>
+    </section>
+    <section class="blog">
+      <div class="container">
+        <ul class="blog__items">
+          <li class="blog__item">
+            <img src="images/bn4.webp" alt="">
+            <div class="blog__item-inner">
+              <time datetime="2015-11-18">18 ноября 2015</time>
+              <h3 class="blog__title">Новый ресторан rico удобное приложение и сайт, где</h3>
+            </div>
+          </li>
+          <li class="blog__item">
+            <img src="images/hot.jpg" alt="">
+            <div class="blog__item-inner">
+              <time datetime="2015-11-18">18 ноября 2015</time>
+              <h3 class="blog__title">Новый remy 239 </h3>
+            </div>
+          </li>
+          <li class="blog__item">
+            <img src="images/raw.jpg" alt="">
+            <div class="blog__item-inner">
+              <time datetime="2015-11-18">18 ноября 2015</time>
+              <h3 class="blog__title">Новый ресторан мука 239</h3>
+            </div>
+          </li>
+          <li class="blog__item">
+            <img src="images/pl1.jpg" alt="">
+            <div class="blog__item-inner">
+              <time datetime="2015-11-18">18 ноября 2015</time>
+              <h3 class="blog__title">кот</h3>
+            </div>
+          </li>
+          <li class="blog__item">
+            <img src="images/raw.jpg" alt="">
+            <div class="blog__item-inner">
+              <time datetime="2015-11-18">18 ноября 2015</time>
+              <h3 class="blog__title">Новый ресторан 239</h3>
+            </div>
+          </li>
+          <li class="blog__item">
+            <img src="images/raw.jpg" alt="">
+            <div class="blog__item-inner">
+              <time datetime="2015-11-18">18 ноября 2015</time>
+              <h3 class="blog__title">Новый ресторан 239</h3>
+            </div>
+          </li>
+          <li class="blog__item">
+            <img src="images/raw.jpg" alt="">
+            <div class="blog__item-inner">
+              <time datetime="2015-11-18">18 ноября 2015</time>
+              <h3 class="blog__title">Новый ресторан 239</h3>
+            </div>
+          </li>
 
-    </div>
+        </ul>
+      </div>
+    </section>
   </main>
   <footer class="footer">
     <div class="container">
@@ -50,6 +108,7 @@
       </div>
     </div>
   </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
 
