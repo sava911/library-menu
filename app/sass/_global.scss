@@ -139,3 +139,15 @@ main {
 //   width: 100%;
 //   z-index: 999;
 // }
+.catalog-btn {
+  border-radius: 12px;
+  padding: 10px 5px;
+  background: var(--item);
+  line-height: 18px;
+}
+
+.disabled,
+.disabled:hover {
+  background-color: var(--dark);
+  color: var(--bg);
+}

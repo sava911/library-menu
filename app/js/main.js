@@ -85,7 +85,42 @@ $(function () {
 
 
 
+  // sort btn
+  const sorter = btn => {
+    const cards = [...document.querySelectorAll('.catalog')]
+    const container = document.querySelector('.catalog__inner')
+    let deck = []
+    let btnDisabled = document.querySelector('.disabled')
+    const filter = id => id.dataset.filter
+    const type = id => id.dataset.type
 
+    cards.forEach(el => {
+      const from = id => el.querySelector(id).innerText
+      let card = {val: from('.value'), name: from('h3'), card: el}
+      deck.push(card)
+      el.remove()
+    })
+
+
+    if (btnDisabled) {
+      btnDisabled.classList.toggle('disabled')
+      if (btn == btnDisabled)
+        btnDisabled.dataset.type = type(btnDisabled) == 'вниз' ? 'верх' : 'вниз'
+      btnDisabled.innerText = `Сорт. по ${filter(btnDisabled)}-${type(btnDisabled)}!`
+    }
+    btn.innerText = `Сорт. по ${filter(btn)}-${type(btn)}!`
+    btn.classList.toggle('disabled')
+    deck.sort((a, b) => {
+      if (filter(btn) == 'имени')
+        return type(btn) == 'верх' ? a.name.localeCompare(b.name) : b.name.localeCompare(a.name)
+      if (filter(btn) == 'цена')
+        return type(btn) == "верх" ? a.val - b.val : b.val - a.val
+    })
+    deck.forEach(el => container.append(el.card))
+  }
+
+  document.querySelectorAll('.catalog-btn').forEach(btn =>
+    btn.addEventListener('click', e => sorter(e.currentTarget)))
 
 
 })
