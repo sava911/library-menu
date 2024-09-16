@@ -28,41 +28,226 @@
           </a>
 
         </div>
-        <div class="banner">
-          <div class="banner__items">
-            <img class="banner__img" src="images/s4.jpg" alt="img">
-          </div>
-          <div class="banner__dots-inner">
-            <div class="dots__items">
-              0000
-            </div>
-          </div>
-        </div>
+
       </div>
     </div>
   </header>
 
   <main>
+    <section class="banner">
+      <div class="container">
+        <!-- <div class="banner__items">
+                <img class="banner__img" src="images/s4.jpg" alt="img">
+              </div>
+              <div class="banner__dots-inner">
+                <div class="dots__items">
+                  0000
+                </div>
+              </div> -->
+        <div data-slide="slide" class="slide">
+          <div class="slide-items">
+
+            <img src="images/s4.jpg" alt="Img 1">
+            <img src="images/hot.jpg" alt="Img 2">
+            <img src="images/bn4.webp" alt="Img 3">
+            <img src="images/raw.jpg" alt="Img 3">
+          </div>
+
+          <nav class="slide-nav">
+            <div class="slide-thumb"></div>
+            <button class="slide-prev">Previous</button>
+            <button class="slide-next">Next</button>
+          </nav>
+
+        </div>
+
+      </div>
+    </section>
     <div class="container">
       <div class="list-menu__links">
         <button onclick="window.history.back()" class="tabs-btn">&#10094; Назад </button>
-        <a href="menu-page.html" class="tabs-btn">SALAT and RAW </a>
-        <a href="menu-page.html" class="tabs-btn">Hot and soup</a>
-        <a href="menu-page.html" class="tabs-btn">Fish and crabs</a>
-        <a href="menu-page.html" class="tabs-btn">Desert </a>
+        <a href="menu-page.html" class="tabs-btn">Холодные закуски</a>
+        <a href="menu-page.html" class="tabs-btn">Горячие закуски</a>
+        <a href="menu-page.html" class="tabs-btn">Рыба и крабы</a>
+        <a href="menu-page.html" class="tabs-btn">Десерты</a>
       </div>
       <h3 class="title">
-        Салат и raw
+        Холодные закуски
       </h3>
       <div class="catalog__inner">
+        <button class="catalog-btn" data-filter="имени" data-type="вниз">Сорт. по имени!</button>
+        <button class="catalog-btn" data-filter="цена" data-type="вниз">Сорт. по цене!</button>
         <div class="catalog">
           <a href="page-product.html">
-            <img class="catalog__img" src="images/fish.jpg" alt="">
+            <img class="catalog__img" src="images/salat-1.jpeg" alt="">
           </a>
           <div class="catalog-info">
             <div class="catalog-info__top">
-              <h3 class="catalog-info__title">Сибас</h3>
-              <span class="catalog-info__sale">500&#8381;</span>
+              <h3 class="catalog-info__title">Салат</h3>
+              <p> <span class="catalog-info__sale value">1600</span>&#8381;</p>
+            </div>
+            <div class="catalog-info__center">
+              <span class="catalog-info__sale">700кк</span>
+              <span class="catalog-info__sale">25m</span>
+              <span class="catalog-info__sale">300г</span>
+            </div>
+          </div>
+          <div class="catalog-info__bottom">
+            <a href="menu-mess.html" class="catalog-info__link">Подробнее</a>
+
+            <button class="catalog-info__btn btn-stars add-to-cart" href="#" data-name="Сибас" data-price="500"
+              data-img="img/fish.jpg">
+
+              <img src="images/star-bk.svg" alt="">
+            </button>
+
+
+          </div>
+        </div>
+        <div class="catalog">
+          <a href="page-product.html">
+            <img class="catalog__img" src="images/bn4.webp" alt="">
+          </a>
+          <div class="catalog-info">
+            <div class="catalog-info__top">
+              <h3 class="catalog-info__title">Устрицы</h3>
+              <p> <span class="catalog-info__sale value">400</span>&#8381;</p>
+            </div>
+            <div class="catalog-info__center">
+              <span class="catalog-info__sale">700кк</span>
+              <span class="catalog-info__sale">25m</span>
+              <span class="catalog-info__sale">300г</span>
+            </div>
+          </div>
+          <div class="catalog-info__bottom">
+            <a href="menu-mess.html" class="catalog-info__link">Подробнее</a>
+
+            <button class="catalog-info__btn btn-stars add-to-cart" href="#" data-name="Сибас" data-price="500"
+              data-img="img/fish.jpg">
+
+              <img src="images/star-bk.svg" alt="">
+            </button>
+
+
+          </div>
+
+        </div>
+        <div class="catalog">
+          <a href="page-product.html">
+            <img class="catalog__img" src="images/hot.jpg" alt="">
+          </a>
+          <div class="catalog-info">
+            <div class="catalog-info__top">
+              <h3 class="catalog-info__title">Еж</h3>
+              <p> <span class="catalog-info__sale value">450</span>&#8381;</p>
+            </div>
+            <div class="catalog-info__center">
+              <span class="catalog-info__sale">700кк</span>
+              <span class="catalog-info__sale">25m</span>
+              <span class="catalog-info__sale">300г</span>
+            </div>
+          </div>
+          <div class="catalog-info__bottom">
+            <a href="menu-mess.html" class="catalog-info__link">Подробнее</a>
+
+            <button class="catalog-info__btn btn-stars add-to-cart" href="#" data-name="Сибас" data-price="500"
+              data-img="img/fish.jpg">
+
+              <img src="images/star-bk.svg" alt="">
+            </button>
+
+
+          </div>
+        </div>
+        <div class="catalog">
+          <a href="page-product.html">
+            <img class="catalog__img" src="images/pagr.jpeg" alt="">
+          </a>
+          <div class="catalog-info">
+            <div class="catalog-info__top">
+              <h3 class="catalog-info__title">Крудо Сибас</h3>
+              <p> <span class="catalog-info__sale value">1200</span>&#8381;</p>
+            </div>
+            <div class="catalog-info__center">
+              <span class="catalog-info__sale">700кк</span>
+              <span class="catalog-info__sale">25m</span>
+              <span class="catalog-info__sale">300г</span>
+            </div>
+          </div>
+          <div class="catalog-info__bottom">
+            <a href="menu-mess.html" class="catalog-info__link">Подробнее</a>
+
+            <button class="catalog-info__btn btn-stars add-to-cart" href="#" data-name="Сибас" data-price="500"
+              data-img="img/fish.jpg">
+
+              <img src="images/star-bk.svg" alt="">
+            </button>
+
+
+          </div>
+        </div>
+        <div class="catalog">
+          <a href="page-product.html">
+            <img class="catalog__img" src="images/raw-fon-2.jpg" alt="">
+          </a>
+          <div class="catalog-info">
+            <div class="catalog-info__top">
+              <h3 class="catalog-info__title">Лосось</h3>
+              <p> <span class="catalog-info__sale value">1500</span>&#8381;</p>
+            </div>
+            <div class="catalog-info__center">
+              <span class="catalog-info__sale">700кк</span>
+              <span class="catalog-info__sale">25m</span>
+              <span class="catalog-info__sale">300г</span>
+            </div>
+          </div>
+          <div class="catalog-info__bottom">
+            <a href="menu-mess.html" class="catalog-info__link">Подробнее</a>
+
+            <button class="catalog-info__btn btn-stars add-to-cart" href="#" data-name="Сибас" data-price="500"
+              data-img="img/fish.jpg">
+
+              <img src="images/star-bk.svg" alt="">
+            </button>
+
+
+          </div>
+        </div>
+        <div class="catalog">
+          <a href="page-product.html">
+            <img class="catalog__img" src="images/raw.jpg" alt="">
+          </a>
+          <div class="catalog-info">
+            <div class="catalog-info__top">
+              <h3 class="catalog-info__title">Лакедра</h3>
+              <p> <span class="catalog-info__sale value">2000</span>&#8381;</p>
+            </div>
+            <div class="catalog-info__center">
+              <span class="catalog-info__sale">700кк</span>
+              <span class="catalog-info__sale">25m</span>
+              <span class="catalog-info__sale">300г</span>
+            </div>
+          </div>
+          <div class="catalog-info__bottom">
+            <a href="menu-mess.html" class="catalog-info__link">Подробнее</a>
+
+            <button class="catalog-info__btn btn-stars add-to-cart" href="#" data-name="Сибас" data-price="500"
+              data-img="img/fish.jpg">
+
+              <img src="images/star-bk.svg" alt="">
+            </button>
+
+
+          </div>
+        </div>
+        <!-- <div class="catalog">
+          <a href="page-product.html">
+            <img class="catalog__img" src="images/salat-1.jpeg" alt="">
+          </a>
+          <div class="catalog-info">
+            <div class="catalog-info__top">
+              <h3 class="catalog-info__title">Салат</h3>
+              <span class="catalog-info__sale value">500<i>&#8381;</i></span>
             </div>
             <div class="catalog-info__center">
               <span class="catalog-info__sale">700кк</span>
@@ -74,7 +259,7 @@
 
               <button class="catalog-info__btn btn-stars add-to-cart" href="#" data-name="Сибас" data-price="500"
                 data-img="img/fish.jpg">
-                <!-- &#10084; -->
+               
                 <img src="images/star-bk.svg" alt="">
               </button>
 
@@ -89,7 +274,7 @@
           <div class="catalog-info">
             <div class="catalog-info__top">
               <h3 class="catalog-info__title">Окунь</h3>
-              <span class="catalog-info__sale">650&#8381;</span>
+              <span class="catalog-info__sale value">650<i>&#8381;</i></span>
             </div>
             <div class="catalog-info__center">
               <span class="catalog-info__sale">500кк</span>
@@ -115,7 +300,7 @@
           <div class="catalog-info">
             <div class="catalog-info__top">
               <h3 class="catalog-info__title">Окунь</h3>
-              <span class="catalog-info__sale">650&#8381;</span>
+              <span class="catalog-info__sale">450<i>&#8381;</i></span>
             </div>
             <div class="catalog-info__center">
               <span class="catalog-info__sale">500кк</span>
@@ -134,6 +319,32 @@
             </div>
           </div>
         </div>
+        <div class="catalog">
+          <a href="menu-mess.html">
+            <img class="catalog__img" src="images/s4.jpg" alt="">
+          </a>
+          <div class="catalog-info">
+            <div class="catalog-info__top">
+              <h3 class="catalog-info__title">еж</h3>
+              <span class="catalog-info__sale value">950<i>&#8381;</i></span>
+            </div>
+            <div class="catalog-info__center">
+              <span class="catalog-info__sale">500кк</span>
+              <span class="catalog-info__sale">25m</span>
+              <span class="catalog-info__sale">300г</span>
+            </div>
+            <div class="catalog-info__bottom">
+              <a href="menu-mess.html" class="catalog-info__link">Подробнее</a>
+
+              <button class="catalog-info__btn btn-stars add-to-cart" data-name="Окунь" data-price="650"
+                data-img="img/oke.jpg">
+                <img src="images/star-bk.svg" alt="">
+              </button>
+
+
+            </div>
+          </div>
+        </div> -->
       </div>
     </div>
   </main>
