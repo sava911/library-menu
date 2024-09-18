@@ -4,6 +4,11 @@
 @import "_global.scss";
 @import "_app.scss";
 @import "_slider.scss";
+@import "_basket.scss";
+@import "_rest-des.scss";
+@import "_bigItems.scss";
+
+
 
 // @import "_fonsts.scss";
 // @import "_header.scss";
@@ -165,10 +170,23 @@
       border-radius: 12px;
       padding: 5px 20px;
       background: var(--item);
+
       // color: var(--green);
       // text-transform: uppercase;
+      position: relative;
+      padding-right: 30px;
+
+
     }
 
+
+    .tabs-btn:not(:first-child)::after {
+      position: absolute;
+      content: '\27A4';
+      right: 6px;
+      top: 6px;
+      font-size: 13px;
+    }
 
   }
 
@@ -325,10 +343,24 @@
     text-align: center;
     padding-top: 4px;
 
+    &:focus,
+    &:hover {
+      // transform: rotate(70deg);
+      background-color: yellow;
+      // border-radius: 30px;
+    }
+
     img {
       // height: 50px;
       width: 25px;
+
+      &:focus,
+      &:hover {
+        transform: rotate(70deg);
+      }
+
     }
+
   }
 }
 
@@ -393,6 +425,7 @@
   // }
 
   .icons {
+    z-index: 4;
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(4, 1fr);

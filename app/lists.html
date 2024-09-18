@@ -66,10 +66,10 @@
     <div class="container">
       <div class="list-menu__links">
         <button onclick="window.history.back()" class="tabs-btn">&#10094; Назад </button>
-        <a href="menu-page.html" class="tabs-btn">Холодные закуски</a>
-        <a href="menu-page.html" class="tabs-btn">Горячие закуски</a>
-        <a href="menu-page.html" class="tabs-btn">Рыба и крабы</a>
-        <a href="menu-page.html" class="tabs-btn">Десерты</a>
+        <a href="lists.html" class="tabs-btn">Холодные закуски </a>
+        <a href="lists.html" class="tabs-btn">Горячие закуски </a>
+        <a href="lists.html" class="tabs-btn">Рыба и крабы </a>
+        <a href="lists.html" class="tabs-btn">Десерты </a>
       </div>
       <h3 class="title">
         Холодные закуски
@@ -95,8 +95,8 @@
           <div class="catalog-info__bottom">
             <a href="menu-mess.html" class="catalog-info__link">Подробнее</a>
 
-            <button class="catalog-info__btn btn-stars add-to-cart" href="#" data-name="Сибас" data-price="500"
-              data-img="img/fish.jpg">
+            <button class="catalog-info__btn btn-stars  add-to-cart" data-name="Салат" data-price="1600"
+              data-img="images/raw.jpg">
 
               <img src="images/star-bk.svg" alt="">
             </button>
@@ -122,8 +122,8 @@
           <div class="catalog-info__bottom">
             <a href="menu-mess.html" class="catalog-info__link">Подробнее</a>
 
-            <button class="catalog-info__btn btn-stars add-to-cart" href="#" data-name="Сибас" data-price="500"
-              data-img="img/fish.jpg">
+            <button class="catalog-info__btn btn-stars  add-to-cart" data-name="Устрицы" data-price="400"
+              data-img="images/bn4.webp">
 
               <img src="images/star-bk.svg" alt="">
             </button>
@@ -150,8 +150,8 @@
           <div class="catalog-info__bottom">
             <a href="menu-mess.html" class="catalog-info__link">Подробнее</a>
 
-            <button class="catalog-info__btn btn-stars add-to-cart" href="#" data-name="Сибас" data-price="500"
-              data-img="img/fish.jpg">
+            <button class="catalog-info__btn btn-stars  add-to-cart" data-name="Еж" data-price="450"
+              data-img="images/raw.jpg">
 
               <img src="images/star-bk.svg" alt="">
             </button>
@@ -177,8 +177,8 @@
           <div class="catalog-info__bottom">
             <a href="menu-mess.html" class="catalog-info__link">Подробнее</a>
 
-            <button class="catalog-info__btn btn-stars add-to-cart" href="#" data-name="Сибас" data-price="500"
-              data-img="img/fish.jpg">
+            <button class="catalog-info__btn btn-stars  add-to-cart" data-name="Крудо Сибас" data-price="1200"
+              data-img="images/raw.jpg">
 
               <img src="images/star-bk.svg" alt="">
             </button>
@@ -204,8 +204,8 @@
           <div class="catalog-info__bottom">
             <a href="menu-mess.html" class="catalog-info__link">Подробнее</a>
 
-            <button class="catalog-info__btn btn-stars add-to-cart" href="#" data-name="Сибас" data-price="500"
-              data-img="img/fish.jpg">
+            <button class="catalog-info__btn btn-stars  add-to-cart" data-name="Лосось" data-price="1500"
+              data-img="images/raw.jpg">
 
               <img src="images/star-bk.svg" alt="">
             </button>
@@ -231,120 +231,44 @@
           <div class="catalog-info__bottom">
             <a href="menu-mess.html" class="catalog-info__link">Подробнее</a>
 
-            <button class="catalog-info__btn btn-stars add-to-cart" href="#" data-name="Сибас" data-price="500"
-              data-img="img/fish.jpg">
+            <button class="catalog-info__btn btn-stars  add-to-cart" data-name="Лакедра" data-price="2000"
+              data-img="images/raw.jpg">
 
               <img src="images/star-bk.svg" alt="">
             </button>
 
 
           </div>
+
         </div>
-        <!-- <div class="catalog">
-          <a href="page-product.html">
-            <img class="catalog__img" src="images/salat-1.jpeg" alt="">
-          </a>
-          <div class="catalog-info">
-            <div class="catalog-info__top">
-              <h3 class="catalog-info__title">Салат</h3>
-              <span class="catalog-info__sale value">500<i>&#8381;</i></span>
-            </div>
-            <div class="catalog-info__center">
-              <span class="catalog-info__sale">700кк</span>
-              <span class="catalog-info__sale">25m</span>
-              <span class="catalog-info__sale">300г</span>
-            </div>
-            <div class="catalog-info__bottom">
-              <a href="menu-mess.html" class="catalog-info__link">Подробнее</a>
 
-              <button class="catalog-info__btn btn-stars add-to-cart" href="#" data-name="Сибас" data-price="500"
-                data-img="img/fish.jpg">
-               
-                <img src="images/star-bk.svg" alt="">
-              </button>
+      </div>
+      <!-- start cart items count -->
+      <div class="cd-cart-container empty">
+        <a href="#0" class="cd-cart-trigger">
+          <ul class="count"> <!-- cart items count -->
+            <li id="count-cart">0</li>
+            <li>0</li>
+          </ul> <!-- .count -->
+        </a>
+        <div class="cd-cart">
+          <div class="wrapper">
+            <header>
+              <h2>Корзина</h2>
+              <span class="undo visible"><a href="#0" id="clear-cart">Очистить</a></span>
+            </header>
 
-
+            <div class="body">
+              <ul id="show-cart">
+                <li>???????</li>
+              </ul>
             </div>
+
+            <footer>
+              <a href="#0" class="checkout btn"><em>К оплате - <span id="total-cart">0</span> ₽</em></a>
+            </footer>
           </div>
         </div>
-        <div class="catalog">
-          <a href="menu-mess.html">
-            <img class="catalog__img" src="images/raw.jpg" alt="">
-          </a>
-          <div class="catalog-info">
-            <div class="catalog-info__top">
-              <h3 class="catalog-info__title">Окунь</h3>
-              <span class="catalog-info__sale value">650<i>&#8381;</i></span>
-            </div>
-            <div class="catalog-info__center">
-              <span class="catalog-info__sale">500кк</span>
-              <span class="catalog-info__sale">25m</span>
-              <span class="catalog-info__sale">300г</span>
-            </div>
-            <div class="catalog-info__bottom">
-              <a href="menu-mess.html" class="catalog-info__link">Подробнее</a>
-
-              <button class="catalog-info__btn btn-stars add-to-cart" data-name="Окунь" data-price="650"
-                data-img="img/oke.jpg">
-                <img src="images/star-bk.svg" alt="">
-              </button>
-
-
-            </div>
-          </div>
-        </div>
-        <div class="catalog">
-          <a href="menu-mess.html">
-            <img class="catalog__img" src="images/sugar.jpg" alt="">
-          </a>
-          <div class="catalog-info">
-            <div class="catalog-info__top">
-              <h3 class="catalog-info__title">Окунь</h3>
-              <span class="catalog-info__sale">450<i>&#8381;</i></span>
-            </div>
-            <div class="catalog-info__center">
-              <span class="catalog-info__sale">500кк</span>
-              <span class="catalog-info__sale">25m</span>
-              <span class="catalog-info__sale">300г</span>
-            </div>
-            <div class="catalog-info__bottom">
-              <a href="menu-mess.html" class="catalog-info__link">Подробнее</a>
-
-              <button class="catalog-info__btn btn-stars add-to-cart" data-name="Окунь" data-price="650"
-                data-img="img/oke.jpg">
-                <img src="images/star-bk.svg" alt="">
-              </button>
-
-
-            </div>
-          </div>
-        </div>
-        <div class="catalog">
-          <a href="menu-mess.html">
-            <img class="catalog__img" src="images/s4.jpg" alt="">
-          </a>
-          <div class="catalog-info">
-            <div class="catalog-info__top">
-              <h3 class="catalog-info__title">еж</h3>
-              <span class="catalog-info__sale value">950<i>&#8381;</i></span>
-            </div>
-            <div class="catalog-info__center">
-              <span class="catalog-info__sale">500кк</span>
-              <span class="catalog-info__sale">25m</span>
-              <span class="catalog-info__sale">300г</span>
-            </div>
-            <div class="catalog-info__bottom">
-              <a href="menu-mess.html" class="catalog-info__link">Подробнее</a>
-
-              <button class="catalog-info__btn btn-stars add-to-cart" data-name="Окунь" data-price="650"
-                data-img="img/oke.jpg">
-                <img src="images/star-bk.svg" alt="">
-              </button>
-
-
-            </div>
-          </div>
-        </div> -->
       </div>
     </div>
   </main>

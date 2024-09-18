@@ -111,6 +111,7 @@ main {
 }
 
 .footer {
+  z-index: 4;
   position: fixed;
   bottom: 0px;
   width: 100%;
@@ -129,7 +130,7 @@ main {
   border-bottom: 3px solid var(--item);
   padding-bottom: 5px;
   width: 250px;
-  font-family: var(--font-title);
+  font-family: var(--font-accent);
 }
 
 // .fixed {
